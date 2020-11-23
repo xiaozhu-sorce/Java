@@ -1,6 +1,4 @@
-public abstract class Vehicle {
-    public void NoOfWheels() {
-    }
+public class lianxi{
     public  static void main(String[]args){
         card c=new card();
         c.NoOfWheels();
@@ -8,12 +6,16 @@ public abstract class Vehicle {
         m.NoOfWheels();
     }
 }
-class card extends Vehicle{
+abstract class Vehicle
+{
+    public void NoOfWheels(){}
+}
+class card {
     public void NoOfWheels() {
         System.out.println("四轮车");
     }
 }
-class MotorBike extends Vehicle{
+class MotorBike {
     public void NoOfWheels() {
         System.out.println("双轮车");
     }
